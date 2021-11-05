@@ -11,6 +11,7 @@
   --hero-back-color: #2f303a;
   --back-color: #f5f4fa;
   --accent-color: #2196f3;
+  --button-hero-color: #188ce8;
   --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -150,11 +151,16 @@ img {
 .hero {
   background-color: var(--hero-back-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
 
   color: var(--hero-text-color);
   font-weight: 900;
@@ -174,8 +180,9 @@ img {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 
-  background-color: var(--hero-back-color);
+  background-color: var(--accent-color);
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 16px;
@@ -186,7 +193,7 @@ img {
 }
 
 .hero-button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--button-hero-color);
 }
 
 /* секции */
@@ -277,7 +284,7 @@ img {
 }
 
 .text-employee {
-  margin: 10px 0 0 0;
+  margin: 10px 0 30px 0;
 
   font-weight: 400;
   font-size: 16px;
@@ -296,12 +303,22 @@ img {
 .flex-team > .item {
   width: 270px;
   margin-right: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  /* padding-top: 50px;
+  padding-bottom: 94px; */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .flex-team > .item:last-child {
   margin-right: 0;
+}
+
+.flex-team > .item {
+  background-color: var(--hero-text-color);
 }
 
 /* Футер */
@@ -339,8 +356,16 @@ img {
   padding-top: 94px;
 }
 
+.portfolio-filters > .item {
+  margin-left: 8px;
+}
+
+.portfolio-filters > .item:first-child {
+  margin-left: 0;
+}
+
 .portf-button {
-  margin-left: 4px;
+  padding: 6px 22px 6px 22px;
 
   background-color: #f5f4fa;
   color: var(--title-text-color);
@@ -353,11 +378,15 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
 
+  border-radius: 4px;
   border: none;
 }
 
 .portf-button:hover {
   background-color: var(--accent-color);
+  color: var(--hero-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* работы портфолио */
